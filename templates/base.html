@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, target-densityDpi=device-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Gym Garden - Private Studio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="{%  static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{%  static "css/fontawesome-all.css" %}" rel="stylesheet">
+    <link href="{%  static "css/swiper.css" %}" rel="stylesheet">
+	<link href="{%  static "css/magnific-popup.css" %}" rel="stylesheet">
+	<link href="{%  static "css/styles.css" %}" rel="stylesheet">
+
+	<!-- Icon  -->
+    <link rel="icon" href="{%  static "images/icon.png" %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">WaterGen</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="/home" style="margin-left: 0.5rem"><img src="{%  static "images/Gymgardenkonen.png" %}" alt="alternative" ></a>
+
+        <!-- Mobile Menu Toggle Button -->
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" style="padding-left: 0; padding-right: 0">
+            <span class="navbar-toggler-awesome fas fa-bars" style="padding-left: 0.6rem"></span>
+            <span class="navbar-toggler-awesome fas fa-times" style="padding-left: 0.6rem"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div  class="collapse navbar-collapse" style="display: none" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="padding: 24px 13px">
+                    <a class="nav-link page-scroll" href="/home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" style="padding: 24px 13px">
+                    <a class="nav-link page-scroll"  href="/goitap">Gói tập</a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item " style="padding: 24px 13px">
+                    <a class="nav-link page-scroll" href="/blog">Blog</a>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item" style="padding: 24px 13px">
+                    <a class="nav-link page-scroll" href="/faq">FAQ</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a target="_blank" href="https://www.facebook.com/gymgarden.privatefitnessstudio">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a target="_blank" href="https://www.instagram.com/gym.garden/">
+                        <i class="fas fa-circle fa-stack-2x instagram"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+
+        {% block content %}
+        {% endblock %}
+
+            <!-- Footer -->
+       <div class="container-fluid">
+            <div class="footer" style="height: auto; background-color: #116736">
+                <div class="row1" style="height: auto; max-height: 12rem">
+                    <a target="_blank" href="https://www.facebook.com/gymgarden.privatefitnessstudio">
+                        <i class="fab fa-facebook" style="cursor: pointer; color: #ffffff"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/gym.garden/">
+                        <i class="fab fa-instagram" style="cursor: pointer; color: #ffffff"></i>
+                    </a>
+                    <div class="box-content" style="background: none; box-shadow: none; text-align: center; padding-bottom: 0; padding-top: 1rem;">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true" >
+                            <span style="font-family: 'Roboto', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">
+                               Địa chỉ: Số 37 Lưu Nhân Chú, Phường 5, Quận Tân Bình, TP.Hồ Chí Minh
+                            </span>
+                        </i>
+                    </div>
+                    <div class="box-content" style="background: none; box-shadow: none; text-align: center; padding-bottom: 0; padding-top: 0.5rem;">
+                        <i class="fa fa-phone">
+                            <span style="font-family: 'Roboto', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">
+                               Hotline: 0968 362 462 hoặc qua ZALO để được tư vấn trực tiếp
+                            </span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- end of footer -->
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "750685151972836");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+   <!-- Scripts -->
+    <script src="{%  static "js/jquery.min.js" %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{%  static "js/popper.min.js" %}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{%  static "js/bootstrap.min.js" %}"></script> <!-- Bootstrap framework -->
+    <script src="{%  static "js/jquery.easing.min.js" %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{%  static "js/swiper.min.js" %}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{%  static "js/jquery.magnific-popup.js" %}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{%  static "js/validator.min.js" %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{%  static "js/scripts.js" %}"></script> <!-- Custom scripts -->
+</body>
+</html>

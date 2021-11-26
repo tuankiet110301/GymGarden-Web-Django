@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+    <div class="bg-blog">
+            <div class="row1" style="padding-top: 10rem; margin: 0 auto; margin-bottom: 3rem; font-family: 'Roboto Condensed', sans-serif">
+                <div class="box-content">
+                <div class="article-title">
+                    <h4>
+                        {{ blog.title | safe }}
+                    </h4>
+                    <div class="time-pub">
+                        {{ blog.created_on }}
+                        <span>
+                            <i class="fas fa-eye" style="margin-left: 1rem; font-weight: lighter"> {{ blog.views }}</i>
+                        </span>
+                    </div>
+                    <div>
+                        {{ blog.content | safe }}
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="padding-bottom: 1rem">
+                <p style="color: #FFFFFF; font-weight: bold; font-size: 25px;">
+                    BÀI VIẾT KHÁC
+                </p>
+                <div class="recent_post row1" style="display: flex; height: auto; padding-bottom: 5rem">
+                    <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12" style="padding-right: 1rem; padding-left: 1rem">
+                             <div class="box-article">
+                                <div class="article-image-cover">
+                                    <img src="{{ blog_next1.image.url }}" alt="alternative">
+                                </div>
+                                <div class="container" style="margin: 1rem 0">
+                                    <div class="article-sum-up">
+                                        {{ blog_next1.created_on }}
+                                    </div>
+                                    <a href="/blog/{{ blog_next1.slug }}">
+                                        <h5 style="margin-left: 1rem; margin-top: 1rem; text-align: left; color: #FFFFFF">
+                                            {{ blog_next1.title }}
+                                        </h5>
+                                        <div class="max-lines">
+                                            {{ blog_next1.thumbnail_content }}
+                                        </div>
+                                    </a>
+                                </div>
+                             </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12" style="padding-right: 1rem; padding-left: 1rem">
+                             <div class="box-article">
+                                <div class="article-image-cover">
+                                    <img src="{{ blog_next2.image.url }}" alt="alternative">
+                                </div>
+                                <div class="container" style="margin: 1rem 0">
+                                    <div class="article-sum-up">
+                                        {{ blog_next2.created_on }}
+                                    </div>
+                                    <a href="/blog/{{ blog_next2.slug }}">
+                                        <h5 style="margin-left: 1rem; margin-top: 1rem; text-align: left; color: #FFFFFF">
+                                            {{ blog_next2.title }}
+                                        </h5>
+                                        <div class="max-lines">
+                                            {{ blog_next2.thumbnail_content }}
+                                        </div>
+                                    </a>
+                                </div>
+                             </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 col-sm-12" style="padding-right: 1rem; padding-left: 1rem">
+                             <div class="box-article">
+                                <div class="article-image-cover">
+                                    <img src="{{ blog_next3.image.url }}" alt="alternative">
+                                </div>
+                                <div class="container" style="margin: 1rem 0">
+                                    <div class="article-sum-up">
+                                        {{ blog_next3.created_on }}
+                                    </div>
+                                    <a href="/blog/{{ blog_next3.slug }}">
+                                        <h5 style="margin-left: 1rem; margin-top: 1rem; text-align: left; color: #FFFFFF">
+                                            {{ blog_next3.title }}
+                                        </h5>
+                                        <div class="max-lines">
+                                            {{ blog_next3.thumbnail_content }}
+                                        </div>
+                                    </a>
+                                </div>
+                             </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+

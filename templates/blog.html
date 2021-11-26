@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="bg-blog">
+        <div class="article-list" style="padding: 3rem 2rem">
+
+        </div>
+        <div class="row1" style="margin: 0 1rem;padding-top: 3rem; padding-bottom:3rem; display: flex">
+                {% for post in posts %}
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="padding-right: 1rem; padding-left: 1rem">
+                        <div class="box-article">
+                            <div class="article-image-cover">
+                                <img src="{{ post.image.url }}" alt="alternative">
+                            </div>
+                            <div class="container" style="margin: 1rem 0">
+                                <div class="article-sum-up">
+                                    {{ post.created_on }}
+                                    <span style="padding-left: 2rem">
+                                        <i class="fas fa-eye" style="font-weight: lighter"> {{ post.views }}</i>
+                                    </span>
+                                </div>
+                                <a href="/blog/{{ post.slug }}" style="text-decoration: none">
+                                    <h5 style="font-family: 'Roboto Condensed', sans-serif;margin-top: 1rem; text-align: left; color: #FFFFFF">
+                                        {{ post.title }}
+                                    </h5>
+                                    <div class="max-lines">
+                                        {{ post.thumbnail_content }}
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+

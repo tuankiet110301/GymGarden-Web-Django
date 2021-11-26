@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="bg-blog" style="box-sizing: border-box;">
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Dịch vụ huấn luyện viên cá nhân là gì?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                  Huấn luyện viên cá nhân sẽ thiết kế giáo án luyện tập dựa trên điều kiện thể trạng, mục tiêu, đồng thời luôn theo sát toàn bộ quá trình tập luyện cuả học viên. Thông qua chương trình tập, HLV sẽ giúp học viên hình thành thói quen tập luyện và sinh hoạt lành mạnh.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+                Một buổi tập cùng HLV gồm có những gì và thường kéo dài bao lâu?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Một buổi tập cùng HLV sẽ được phân bổ phù hợp với sức khỏe, giai đoạn luyện tập của học viên và trung bình sẽ kéo dài 60 phút.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+                Gymgarden có các dịch vụ gì?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                  Gymgarden hoạt động theo mô hình HLV cá nhân, với các dịch vụ:
+                <ul style="padding-left: 1rem;">
+                  <li>Thiết kế giáo án luyện tập dựa trên thể trạng và mục tiêu của từng học viên.</li>
+                  <li>Đánh giá tình trạng sức khoẻ, thể lực, theo dõi chỉ số cơ thể bằng thiết bị chuyên nghiệp.</li>
+                  <li>Miễn phí thức ăn nhẹ, khăn tập, nước uống.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Gymgarden khác gì so với các phòng tập khác?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Gymgarden hoạt động theo mô hình Huấn Luyện Viên cá nhân 1 kèm 1 nhằm đảm bảo không gian tập luyện riêng tư, mang lại hiệu quả tối đa cho học viên, vì vậy Câu lạc bộ không cung cấp các gói tập membership.
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+        accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});
+
+    </script>
+
+
+
+
+
+
+
+{% endblock %}
