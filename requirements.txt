@@ -65,3 +65,5 @@ webdriver-manager==3.4.2
 webencodings==0.5.1
 whitenoise==5.3.0
 widgetsnbextension==3.5.1
+dj-database-url 
+psycopg2
