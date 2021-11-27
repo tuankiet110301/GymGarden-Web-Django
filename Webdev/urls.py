@@ -31,3 +31,6 @@ urlpatterns = [
     url(r'^blog/(?P<slug>[\w-]+)/$', reslug, name='reslug'),
     url(r'^faq/$', faq),
 ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
