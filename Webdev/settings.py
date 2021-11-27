@@ -146,7 +146,6 @@ SUMMERNOTE_CONFIG = {
     'attachment_filesize_limit': 10000000, # specify the file size
 }
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
