@@ -145,6 +145,8 @@ SUMMERNOTE_CONFIG = {
     'attachment_filesize_limit': 10000000, # specify the file size
 }
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 HITCOUNT_KEEP_HIT_ACTIVE = { 'days': 1 }
 HITCOUNT_HITS_PER_IP_LIMIT = 0
 HITCOUNT_KEEP_HIT_IN_DATABASE = { 'days': 30 }
