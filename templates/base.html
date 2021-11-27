@@ -56,7 +56,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">WaterGen</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="/home" style="margin-left: 0.5rem"><img src="{%  static "images/Gymgardenkonen.png" %}" alt="alternative" ></a>
+        <a class="navbar-brand logo-image" href="/home" style="margin-left: 1.27rem"><img src="{%  static "images/Gymgardenkonen.png" %}" alt="alternative" ></a>
 
         <!-- Mobile Menu Toggle Button -->
 
@@ -67,7 +67,7 @@
         </button>
         <!-- end of mobile menu toggle button -->
 
-        <div  class="collapse navbar-collapse" style="display: none" id="navbarsExampleDefault">
+        <div  class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" style="padding: 24px 13px">
                     <a class="nav-link page-scroll" href="/home">Home <span class="sr-only">(current)</span></a>
@@ -112,7 +112,7 @@
             <!-- Footer -->
        <div class="container-fluid">
             <div class="footer" style="height: auto; background-color: #116736">
-                <div class="row1" style="height: auto; max-height: 12rem">
+                <div class="row1" style="height: auto">
                     <a target="_blank" href="https://www.facebook.com/gymgarden.privatefitnessstudio">
                         <i class="fab fa-facebook" style="cursor: pointer; color: #ffffff"></i>
                     </a>
@@ -121,49 +121,44 @@
                     </a>
                     <div class="box-content" style="background: none; box-shadow: none; text-align: center; padding-bottom: 0; padding-top: 1rem;">
                         <i class="fas fa-map-marker-alt" aria-hidden="true" >
-                            <span style="font-family: 'Roboto', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">
+                            <span style="font-family: 'Roboto Thin', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">
                                Địa chỉ: Số 37 Lưu Nhân Chú, Phường 5, Quận Tân Bình, TP.Hồ Chí Minh
                             </span>
                         </i>
                     </div>
                     <div class="box-content" style="background: none; box-shadow: none; text-align: center; padding-bottom: 0; padding-top: 0.5rem;">
                         <i class="fa fa-phone">
-                            <span style="font-family: 'Roboto', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">
+                            <span style="font-family: 'Roboto Thin', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">
                                Hotline: 0968 362 462 hoặc qua ZALO để được tư vấn trực tiếp
                             </span>
+                        </i>
+                    </div>
+                    <div class="box-content" style="background: none; box-shadow: none; text-align: center; padding-bottom: 0; padding-top: 0.5rem;">
+                        <i>
+                            <span>
+                               <a href="/home" style="text-decoration: none;font-family: 'Roboto Thin', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">Home</a>
+                            </span>
+                            <span>
+                                |
+                            </span>
+                            <span >
+                               <a href="/blog" style="text-decoration: none;font-family: 'Roboto Thin', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">Blog</a>
+                            </span>
+                            <span>
+                                |
+                            </span>
+                            <span >
+                               <a href="/faq" style="text-decoration: none;font-family: 'Roboto Thin', sans-serif;color: #ffffff;font-size: 19px; font-weight: normal">FAQ</a>
+                            </span>
+
+
                         </i>
                     </div>
                 </div>
             </div>
        </div>
         <!-- end of footer -->
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "750685151972836");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
    <!-- Scripts -->
     <script src="{%  static "js/jquery.min.js" %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
