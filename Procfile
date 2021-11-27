@@ -1,1 +1,1 @@
-web: guinicorn crml.wsgi --log-file -
+web: guinicorn app:app
