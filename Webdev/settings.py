@@ -188,7 +188,7 @@ HITCOUNT_KEEP_HIT_ACTIVE = { 'days': 1 }
 HITCOUNT_HITS_PER_IP_LIMIT = 0
 HITCOUNT_KEEP_HIT_IN_DATABASE = { 'days': 30 }
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 if 'DATABASE_URL' in os.environ:
