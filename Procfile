@@ -1,1 +1,1 @@
-web: gunicorn Gym-Garden-Web.wsgi --log-file -
+web: gunicorn Webdev.wsgi --log-file -
