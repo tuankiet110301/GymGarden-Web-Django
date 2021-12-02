@@ -143,8 +143,6 @@ SUMMERNOTE_THEME = 'bs4'
 
 
 SUMMERNOTE_CONFIG = {
-    'iframe': True,
-    'iframe': False,
     'attachment_filesize_limit': 10000000, # specify the file size
 }
 
